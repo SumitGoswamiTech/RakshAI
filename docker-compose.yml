@@ -1,0 +1,16 @@
+services:
+  fraud-shield:
+    build: .
+    image: fraud-shield:latest
+    ports:
+      - "8000:8000"
+    environment:
+      FRAUD_SHIELD_ENV: demo            # demo = simulator + seed data; use "production" for real traffic
+      # FRAUD_SHIELD_API_KEY: change-me # require X-API-Key on every write endpoint
+      # FRAUD_SHIELD_RATE_LIMIT: "120"  # writes per minute per client IP
+    volumes:
+      - shield-data:/data
+    restart: unless-stopped
+
+volumes:
+  shield-data:

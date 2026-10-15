@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+# Environments
+venv/
+.venv/
+env/
+# Generated / local state (regenerate with `python run.py --train`)
+data/upi_transactions.csv
+data/*.db
+data/*.db-wal
+data/*.db-shm
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets / tooling
+.env
+.claude/

@@ -1,0 +1,9 @@
+# Runtime dependencies. Ranges (not exact pins) so a fresh `pip install` resolves on any
+# supported Python (3.10+) instead of failing on a version that does not exist for your platform.
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+xgboost>=2.0

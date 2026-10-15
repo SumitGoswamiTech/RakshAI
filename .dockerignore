@@ -1,0 +1,8 @@
+venv/
+.venv/
+.git/
+__pycache__/
+.pytest_cache/
+data/upi_transactions.csv
+data/*.db*
+tests/
